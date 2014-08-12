@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Don't Use w3Schools!",
+  "description": "This extension shows you a sad cat if you use w3Schools",
+  "version" : "1.0",
+  "background" : "index.html",
+  "content_scripts": [
+    {
+      "matches": ["http://www.w3schools.com/*"],
+      "css": ["basic.css"],
+      "js": ["jquery-1.11.1.js", "script.js"]
+    }
+  ]
+}
